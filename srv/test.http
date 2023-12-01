@@ -1,0 +1,27 @@
+GET http://localhost:4004/odata/v4/myservice/Personal_details
+
+###
+POST http://localhost:4004/odata/v4/myservice/Personal_details
+Content-Type: application/json
+
+{
+     "ID" :"567898",
+    "Name": "tina",
+    "Age" : "92",
+    "Mobile" : "678909876",
+   "email" : "tina@yahoo.com"
+}
+
+###
+
+###
+PATCH http://localhost:4004/odata/v4/myservice/Personal_details/12
+Content-Type: application/json
+
+{
+    
+    "Name": "tina",
+    "Age" : "96",
+    "Mobile" : "678909876",
+   "email" : "tina@yahoo.com"
+}
